@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class Navbar extends StatelessWidget {
@@ -25,7 +23,6 @@ class DesktopNavbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
-        constraints: BoxConstraints(maxWidth: 1900),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -61,7 +58,7 @@ class DesktopNavbar extends StatelessWidget {
                   width: 30,
                 ),
                 MaterialButton(
-                  color: Colors.green,
+                  color: Colors.yellow[800],
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
                   onPressed: () {},

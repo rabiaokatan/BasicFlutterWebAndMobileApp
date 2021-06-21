@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_mobile/LandingPage/landingPage.dart';
 import 'package:flutter_web_mobile/Navbar/navbar.dart';
 
 void main() {
@@ -29,15 +30,21 @@ class MyHomePage extends StatelessWidget {
             begin: Alignment.centerLeft,
             end: Alignment.centerRight,
             colors: [
-              Color.fromRGBO(0, 180, 0, 1.0),
-              Color.fromRGBO(20, 30, 54, 1.0)
+              Color.fromRGBO(170, 20, 20, 1.0),
+              Color.fromRGBO(100, 11, 54, 1.0)
             ],
           ),
         ),
-        child: Column(
-          children: [
-            Navbar(),
-          ],
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Navbar(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical:20, horizontal: 40),
+                child: LandingPage(),
+              ),
+            ],
+          ),
         ),
       ),
     );
